@@ -16,8 +16,3 @@ print ( 20000000 % 2)
 
 #powers
 print ( 2 ** 3)  # 2 to the power of 3
-
-# order of operation
-
-print (2 + 10 * 10 + 3)
-print ((2+10) (10+3))

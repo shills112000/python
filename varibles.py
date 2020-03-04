@@ -12,8 +12,11 @@ print (my_dogs)
 
 # type  , tells you what data type a variable is
 
-type (my_dogs)
+what_type=type(my_dogs)
+print (what_type)   # SHOWS INT
 
 my_dogs = "test"
 
 print (my_dogs)
+what_type=type(my_dogs)
+print (what_type)  # shows str
