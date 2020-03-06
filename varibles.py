@@ -20,3 +20,10 @@ my_dogs = "test"
 print (my_dogs)
 what_type=type(my_dogs)
 print (what_type)  # shows str
+
+
+my_income = 100
+tax_rate = 0.1
+
+my_taxes = my_income * tax_rate
+print (my_taxes)
