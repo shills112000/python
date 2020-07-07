@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3.7
 # variables cannot start with a numbers
 # There cannot be spaces , use _ instead
 # canoot use  :"",<>/>?|\()!@#$%^&*~-+
@@ -27,3 +28,12 @@ tax_rate = 0.1
 
 my_taxes = my_income * tax_rate
 print (my_taxes)
+
+
+# add to veriable
+
+my_name="Simon"
+
+my_name += " Hills"
+
+print (my_name)

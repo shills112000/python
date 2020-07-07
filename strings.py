@@ -1,3 +1,7 @@
+#!/usr/bin/env python3.7
+
+# https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+
 # strings are sequence of charectors , using either a single or double quotes
 # strings are ordered squences , means we can use indexing and slicing to grab subsections of the strings
 
@@ -10,6 +14,7 @@
 # string : h e l l o
 # index  : 0 1 2 3 4
 # reverse: 0 -4 -3 -2 -1      # so last charector will always be -1
+
 
 ## slicing
 
@@ -71,6 +76,12 @@ x.split('i') #  create a list splitting using 'i'
 x=x.split('i')
 print (x)
 
+x = "test"
+print ("test")
+x.find('t') # show where in string test the letter t exists
+
+# STring counting
+'string counting'.count("n") # counts how many n's are in the text
 
 #### String formating for printing
 # .format() or f-strings
