@@ -30,9 +30,29 @@ class Tire:
         >>> tire = Tire('P', 205, 65, 15)~
         >>> tire.circumference()
         """
-        side_wall_inches = (self.width * (self.ratio / 100)) / 25.4
-        total_diameter = side_wall_inches * 2 + self.diameter
+        #side_wall_inches = (self.width * (self.ratio / 100)) / 25.4
+        total_diameter = self.side_wall_inches() * 2 + self.diameter #self._side_wall_inches calls the method
         return round(total_diameter * math.pi,1)
 
+    def side_wall_inches(self):
+        return (self.width * (self.ratio / 100)) / 25.4
+
+
+
+class SnowTire(Tire): # this inherits from class Tire
+    def __init__(self,tire_type, width, ratio, diameter , chain_thickness, brand ='', construction ='R'):
+        #Tire.__init__(self ,tire_type, width, ratio, diameter ,brand , construction )
+        super().__init__(tire_type, width, ratio, diameter ,brand , construction ) # inherit the Tire parent class __init__
+        self.chain_thickness = chain_thickness
+
+    def circumference(self):
+        """
+        Circ of tire snow chains in inches
+        """
+        total_diameter = (self.side_wall_inches() + self.chain_thickness ) * 2 + self.diameter
+        return round(total_diameter * math.pi,1)
+
+    def __repr__(self):
+        return super().__repr__() + "(Snow)" # call the insherited class ___repr__
 
 

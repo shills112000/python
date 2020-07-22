@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3.7
 
-from tires_class import Tire # Pull in the class from file tires_class.py
+from tires_class import Tire,SnowTire # Pull in the class from file tires_class.py
 
 class Car:
     """
@@ -29,13 +29,19 @@ print (my_car)
 my_car.description()
 
 
-tire= Tire('P', 205, 55, 15)
+tire= SnowTire('P', 205, 65, 15, 2)
+print (tire)
 tires= [tire,tire,tire,tire]
-
 honda= Car (tires=tires, engine='4-cylinder')
-honda.description()
-print (honda.wheel_circumference())
-honda.tires = []
-print (honda.wheel_circumference())
 print (tire.circumference())
+print (honda.description())
+#print (honda.wheel_circumference())
+
+
+tire= Tire('P', 205, 65, 15, 2)
+tires= [tire,tire,tire,tire]
+honda= Car (tires=tires, engine='4-cylinder')
+print (tire.circumference())
+print (honda.description())
+#print (honda.wheel_circumference())
 
