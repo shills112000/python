@@ -31,24 +31,30 @@
 # get length
 word="Hello World"
 length=len(word)  # get the length of a string
-print (length)
+print (f"lenth of the word: {word} is this many charectors {length}")
 
+word = "Tinker"
+print (f"get ink from word {word} , result is : {word[1:4]}")
+
+word = "abcdefghijk"
 # string indexing
-word="Hello World"
-print (word)
-print (word[0]) # get first charector of string
-print (word[-2]) # get second last charector using negative indexing
+print (f"\nthe word is {word}")
+print (f"the first charector of the word is {word[0]}") # get first charector of string
+print (f"the second last charector of the word is : {word[-2]}") # get second last charector using negative indexing
 
 # string slicing
 word="abcdefghijk"
-print (word[2:]) # grab everything from letter c to the end
-print (word[:3]) #  get everything upto letter c, remember it does not include 3rd index
-print (word[0:3:1]) # This is the same as above , but all slice information given eg. everything up to letter class (object):
-print (word[3:6]) # get def in string
-print (word[::2]) # print every other letter
-print (word[::-1]) # reverse the string ###### INTERVIEW QUESTIONS
+print (f"\n word is {word}")
+print (f"grab everything from letter c to the end of word : {word} , here is the result : {word[2:]}") # grab everything from letter c to the end
 
-print (word[::-2]) # print out with -2 steps
+print (f"get everything upto letter c, remember it does not include 3rd index  : {word} , here is the result : {word[:3]}") #  get everything upto letter c, remember it does not include 3rd index
+
+print (f"same as above but using full index syntax : {word[0:3:1]}") # This is the same as above , but all slice information given eg. everything up to letter class (object):
+
+print (f"get def in word {word} , result {word[3:6]}") # get def in string
+print (f"print every other letter of word {word} , result : {word[::2]}") # print every other letter
+print (f"reverse the word {word} {word[::-1]}") # reverse the string ###### INTERVIEW QUESTIONS
+print (f"print out with word {word} -2 steps {word[::-2]}") # print out with -2 steps
 
 # Print properties and methods
 
@@ -57,7 +63,13 @@ name= "Sam"
 # eg you cannot run  name[0] = 'P' as strings are immutable
 
 # if you wanted to change sam to pam
-last_letters= name[1:]  # get am
+print (f"\nName is {name}")
+
+last_letters= name[1:3:1]  # get am
+# or you can just use
+last_latters= name[1:] # same as name[1:3:1]
+print (f"Print last letters of  {name}, result : {last_letters}")
+
 new_name="P" + last_letters
 print (new_name)
 

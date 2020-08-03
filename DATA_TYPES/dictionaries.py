@@ -13,6 +13,7 @@
 #        Each key can only have one value (so don't have duplicates when creating a dict)
 #        We create dictionary literals by using curly braces ({ and }), separating keys from values using colons (:), and separating key/value pairs using commas (,). Here's an example dictionary:
 
+# Dictionaires : objects retirved by key name,  unordered can not be sorted
 
 ages ={'david': 29, 'alex': 30}
 
@@ -55,5 +56,25 @@ print (f" put in a list {x}")
 weights=dict(kevin=160, bob=250)
 
 
+d = {'k1':123, 'k2':[1,4,3], 'k3':{'inside_key1':100}} # dictionarys can have lists and dictionarys inside dictionaries
+print (f"\ndictionary is : {d}")
 
+print (f"first key k1 is : {d['k1']}")
 
+d['k2'].sort()  # sort the list in the dictionary
+print (f"sorted key k2 is : {d['k2']}")
+
+d['k2'][2] = 433  # change the value of the list in the dictionary
+print (f"\ndictionary is : {d}")
+
+d['k3']['inside_key1'] = 200 # change the dictionary inside the dictionary
+print (f"\ndictionary is : {d['k3']}")
+
+print (f"\ndictionary is : {d}")
+
+d={'key1': ['a','b','c']}
+print (d['key1']) # print the uppercase
+
+print (d['key1'][2].upper()) # print the uppercase
+d['key1'][2]=d['key1'][2].upper() # set the dictionary list to uppercase
+print (d['key1']) # print the uppercase

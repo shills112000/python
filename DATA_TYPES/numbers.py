@@ -2,13 +2,14 @@
 # Intergers
 # floating point numbers
 
+
+# INTERGERS
+
 # simple addition
 print (2 + 2)
 print (2 - 1)
 print (2 * 2)
 print (3 / 2)
-
-# TEST
 
 # Mods
 print (7 % 4)  # mod
@@ -19,3 +20,7 @@ print ( 20000000 % 2)
 
 #powers
 print ( 2 ** 3)  # 2 to the power of 3
+
+# order of operation
+print ( (2 + 10) *  (10 + 2))
+
