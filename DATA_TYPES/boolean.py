@@ -2,6 +2,8 @@
 
 # https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not
 
+#True
+#False
 
  # NOT
 
@@ -27,3 +29,5 @@ last = "Hills"
 
 if first and last:
         print (f"name has first and last {first} {last}")
+
+print (type(False))

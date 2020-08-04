@@ -7,12 +7,15 @@
 #tuple is fixed width imutible sequence type
 
 point = (2.0, 3.0)
+print (type (point))
+print (len (point))
 
 # cannot be modifed once created
 # cannot change the length of a tuple
 
 x= point[0]
-
+print (f" x is {x}")
+x= point[-1]
 print (f" x is {x}")
 
 # The below will not work as you cannot modify a tuple
@@ -40,3 +43,8 @@ x=list(range(1,12,2))  # (start,end,step) convert range into a list
 
 print (f" x is {x}")
 
+
+t= ('a','a','b')
+print (t.count('a')) # count how many a's are in the tuple
+
+print (t.index('a')) # get the index location of the first 'a'
