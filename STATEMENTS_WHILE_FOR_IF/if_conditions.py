@@ -23,6 +23,13 @@ else:
     print (f" {name} is too short")
 
 
+hungry = False
+if hungry:
+    print ("Feed me")
+else:
+    print ("don't feed me")
+
+
 # IN keyword
 
 #2 in [1,2,3]
@@ -32,7 +39,7 @@ if 2 in [1,2,3]:
 
 x=[1,2,3]
 if 6 in x:
-    print ("2 is in the list")
+    print ("6 is in the list")
 else:
     print (f"6 is not in the list {x} ")
 
@@ -41,4 +48,6 @@ if 4 not in [1,2,3]:
 
 if True:
     print ("True statement")
+
+
 
