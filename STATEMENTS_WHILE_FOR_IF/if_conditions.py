@@ -42,15 +42,3 @@ if 4 not in [1,2,3]:
 if True:
     print ("True statement")
 
-#>>> 1 < 2
-#True
-#>>> 0 > 2
-#False
-#>>> 2 == 1
-#False
-#>>> 2 != 1
-#True
-#>>> 3.0 >= 3.0
-#True
-#>>> 3.1 <= 3.0
-#False
